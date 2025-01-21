@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('galaxy.jpg') no-repeat;
+  background-position: cover;
+  background-size: cover;
+  align-items: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  padding: 0px 40px 50px 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.wrapper #logo-galaxy {
+  width: 80px;
+  height: 80px;
+}
+.wrapper .title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.wrapper .title-container h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Playwrite AU SA", serif;
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 40px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  background: transparent;
+  padding: 20px 40px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box box-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin: 3px;
+  cursor: pointer;
+}
+.remember-forgot label {
+  cursor: pointer;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrapper .register-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14.5px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}

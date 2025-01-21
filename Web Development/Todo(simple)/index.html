@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List (simple)</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>To-do List (simple version)</h1>
+
+    <div class="task-container">
+      <input
+        type="text"
+        id="input-box"
+        placeholder="Type your to-do task here..."
+      />
+      <button id="add-btn">+</button>
+    </div>
+
+    <ul id="list-container">
+      <li>Studying <button class="delBtn" onclick="deleteItem(event)">Delete</button></li>
+    </ul>
+
+    <span
+      id="list-full"
+      style="color: red; font-size: 18px; font-weight: 900"
+    ></span>
+
+    <audio autoplay loop>
+      <source src="PinkSoldiers.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="boxes">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="squid"></div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

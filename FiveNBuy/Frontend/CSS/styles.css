@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Poppins&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #2c3e50;
+    padding: 10px 10px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;       /* Darken the background on hover */
+    color: #fff;                  /* White text color on hover */
+  }
+
+@media screen and (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        margin: 10px 0;
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+}
+
+body{
+    font-family: "Poppins", serif;
+    background-color: #ecf0f1;
+    padding: 0;
+    margin: 0;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer p{
+    margin: 0;
+}

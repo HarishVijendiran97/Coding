@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <h1>DATA COLLECTION</h1>
+
+    <div class="form-container">
+      <form action="" id="form">
+        <h2>Form Validation</h2>
+
+        <div class="input-box">
+          <label for="">Firstname</label>
+          <input
+            class="input-box1"
+            type="text"
+            name="firstname"
+            placeholder="firstname"
+          />
+
+          <label for="">Lastname</label>
+          <input
+            class="input-box2"
+            type="text"
+            name="lastname"
+            placeholder="lastname"
+          />
+
+          <label for="">Email</label>
+          <input
+            class="input-box3"
+            type="text"
+            name="emailname"
+            placeholder="email"
+          />
+        </div>
+
+        <div class="checkbox-option">
+          <label for="option1"
+            ><input type="checkbox" id="option1" />option 1</label
+          >
+
+          <label for="option2"
+            ><input type="checkbox" id="option2" />option 2</label
+          >
+        </div>
+
+        <div class="radio-option">
+          <label for="male"
+            ><input type="radio" name="gender" id="male" />Male</label
+          >
+
+          <label for="female"
+            ><input type="radio" name="gender" id="female" />Female</label
+          >
+        </div>
+
+        <div class="comment">
+          <label for="comment">Comment</label>
+          <textarea name="" id="comment"></textarea>
+        </div>
+
+        <div class="select-dropdown">
+          <label for="select">Select an option</label>
+          <select name="select" id="select">
+            <option value="">--select--</option>
+            <option value="cat">cat</option>
+            <option value="dog">dog</option>
+            <option value="fish">fish</option>
+          </select>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" name="submit">Submit</button>
+          <button type="button" name="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

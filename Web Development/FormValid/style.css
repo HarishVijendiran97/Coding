@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url("galaxy.jpg") no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 50%;
+  padding: 25px;
+  margin-left: 25px;
+  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+@media screen and (max-width: 2560px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 38%;
+      padding: 25px;
+      margin-left: 15px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+@media screen and (max-width: 1440px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 30%;
+      padding: 25px;
+      margin-left: 15px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 45%;
+    padding: 25px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 38%;
+      padding: 25px;
+      margin-left: 25px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 78%;
+      padding: 25px;
+      margin-left: 65px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+@media screen and (max-width: 500px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 78%;
+      padding: 25px;
+      margin-left: 55px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 88%;
+      padding: 5px;
+      margin-left: 20px;
+      margin-bottom: 25px;
+      border: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      outline: none;
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+    }
+  }
+
+
+
+.form-container h2 {
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+}
+
+.form-container .input-box {
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.input-box label {
+  color: white;
+  padding: 15px;
+  display: inline-flex;
+  font-weight: 500;
+}
+
+.input-box input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 20px 45px 20px 20px;
+  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  background: transparent;
+  color: #ffffffea;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.input-box input::placeholder {
+  color: #ffffffd0;
+  font-size: 14.5px;
+}
+
+.form-container .checkbox-option {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 2px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.checkbox-option label input {
+  font-size: 18px;
+  margin: 3px;
+  accent-color: white;
+}
+
+.form-container .radio-option {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 2px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.radio-option label input {
+  font-size: 18px;
+  margin: 3px;
+  accent-color: #000;
+}
+
+.form-container .comment {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  left: 5%;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.comment textarea {
+  color: #fff;
+  background: transparent;
+  border: none;
+  height: 100%;
+  width: 50%;
+  transform: translatex(80%);
+  position: absolute;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-container .select-dropdown {
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.select-dropdown select {
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  accent-color: white;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.select-dropdown select option {
+  background-color: black;
+}
+
+.form-container .btn-container {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.form-container .btn-container button {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.btn-container button:hover {
+  background-color: #fff;
+  color: #333;
+}

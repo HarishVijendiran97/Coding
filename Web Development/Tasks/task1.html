@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <style>
+      
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
+      button:hover{
+        background-color: rgb(104, 250, 60);
+      }
+      input{
+        margin-bottom: 20px;
+        color: #034f84;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        font-size: 16px;
+        width: 80%;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #fdf29e;
+        height: 100vh;
+      } 
+      .btn-task{
+        border-radius: 10px;
+        background-color: #feb236;
+        font-weight: 600;
+      }
+      body .container{
+        background-color: #a15fdf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        min-width: 25%;
+        height: 32vh;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      h1{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 700;
+        text-align: center;
+        margin: 10px;
+        color: #e2ce17;
+        text-shadow: 2px 2px black;
+        margin-bottom: 30px;
+      }
+      </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h3 style="font-weight: 700;text-align: center; margin:10px; color: #feb236; text-shadow: 2px 2px black;"><b>Task 1</b></h3>
+      <h1 id="result"></h1>
+      <input id="input-box" onkeyup="runfunc()" placeholder="Type here..." />
+      <button class="btn-task"><a href="task2.html">Task2</a</button>
+    </div>
+    
+    <script>
+      var enteredValue = document.getElementById("input-box");
+      var gettingHeading = document.getElementById("result");
+      function runfunc() {
+        gettingHeading.textContent = enteredValue.value;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h3>Get Element By Id Example</h3>
+    <p id="p1">Paragraph text</p>
+    <div id="greeting">Hello, World</div>
+    <button id="flip">Flip me</button>
+    <p id="username"></p>
+    <form id="myForm" class="form1">
+      <!--userName-->
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" placeholder="Name and surname" /><br />
+      <!--Email-->
+      <label for="mail">Enter your Email:</label>
+      <input type="email" id="mail" placeholder="email here" /><br />
+      <!--Password-->
+      <label for="pass" class="pass">Enter your password:</label>
+      <input type="password" id="pass" placeholder="Password here" /><br />
+      <!--Agreement-->
+      <label for="agree">Agreement:</label>
+      <input type="checkbox" id="agree" /><br />
+      <!--Submit-->
+      <button type="button" onclick="processFormData()">Submit</button>
+    </form>
+
+    <div id="output" class="output" style="display: none">
+      <p><strong>Name: </strong><span id="outputName"></span></p>
+      <p><strong>Email: </strong><span id="outputMail"></span></p>
+      <p><strong>Password: </strong><span id="outputPass"></span></p>
+      <p><strong>Agreement: </strong><span id="outputAgree"></span></p>
+    </div>
+
+    <label for="membership" class="member">VIP member</label>
+    <input type="checkbox" id="membership" />
+    <button onclick="checkAge()">Verify</button>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <input type="text" id="eventName" onchange="change()" placeholder="Write and Press Enter" />
+
+    <button id="pi">One Time Pi Button</button>
+
+    <div id="animContainer">
+      <div id="box"></div>
+    </div>
+
+    <div class="imgPreNex">
+      <button onclick="prev()">prev</button>
+      <img
+        id="slider"
+        src="Harish.jpg"
+        width="150px"
+        height="150"
+        style="margin-top: 30px"
+      />
+      <button onclick="next()">next</button>
+    </div>
+    <form class="form1" onsubmit="return validate(event)" method="post">
+        Number: <input type="text" name="num1" id="num1"><br>
+        Repeat: <input type="text" name="num2" id="num2"><br>
+        <input type="submit" value="Submit" class="subbtn"/>
+      </form>
+    <script src="script.js"></script>
+  </body>
+</html>

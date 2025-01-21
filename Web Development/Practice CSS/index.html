@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+
+        body{
+            background-color: darkslategrey;
+        }
+
+        p, h1{
+            text-align: center;
+            color: white;
+        }
+        .web{
+            text-align: center;
+            color: white;
+        }
+        .web a{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            position: fixed;
+        }
+
+        .head{
+            text-shadow: black 10px 10px 10px;
+            /**/
+            text-decoration: overline;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        a:link{
+            color: #d11bce;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #00ff00;
+            background-color: #ff0000;       
+        }
+        a:active{
+            color: #b8860b;
+            background-color: #000000;
+        }
+        #table1{
+            border: 5px solid #0c1527;
+            border-collapse: collapse;
+            background-image: url('Harish.jpg');
+            background-repeat: no-repeat;
+        }
+        #table1 th, #table1 td{
+            border: 2px solid #0c1527;
+        }
+        td{
+            text-align: left;
+        }
+        th{
+            text-align: center;
+            
+        }
+        tr:nth-child(odd){
+            color: red;
+        }
+        .dis{
+            display: block;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            background-image: url('Harish.jpg');
+            background-repeat: no-repeat;
+        }
+        .wrap{
+            flex-grow: 2;
+        }
+        .pos{
+            position: absolute;
+            left: 720px;
+            top: 50%;
+        }
+        .pos:hover{
+            /* transform-origin: bottom right; */
+            transform: translate(500px) rotate(15deg) scale(2);
+        }
+        .transi{
+            position: absolute;
+            left: 520px;
+            top: 70%;
+            width: 30%;
+            transition: width 3s, transform 5s, color 5s;
+            transform: scale(1);
+            color: green;
+            transition-delay: 2s;
+        }
+        .transi:hover
+        {
+            width: 50%;
+            transform: scale(3);
+            color: red;
+        }
+        .key{
+            position: absolute;
+            left: 720px;
+            top: 80%;
+            /* animation-name: colorChange;
+            animation-duration: 0.5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite; */
+            animation: colorChange 0.5s ease-out 2s infinite;
+        }
+
+        @keyframes colorChange {
+            0%{
+                color: rgb(57, 58, 153);
+            }
+            33%{
+                color: #7f3b91;
+                transform: scale(3);
+            }
+            66%{
+                color: #9b2c64;
+                transform: scale(2);
+            }
+            100%{
+                color: rgb(138, 41, 57);
+                transform: scale(1);
+                position: absolute;
+                left: 800px;
+                top: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <th>Rank</th>
+            <th>Movie Title</th>
+            <th>Director</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dune</td>
+            <td>Dennis</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Spiderman</td>
+            <td>Jon</td>
+        </tr>
+    </table>
+    <nav class="web">
+        <a href="https:\\google.com">Google link</a>
+        <br>
+        <a class="dis" href="https:\\sololearn.com">Sololearn</a>
+    </nav>
+    <h1 class="head">head</h1>
+    <div class="flex">
+        <p>gbiubuibsbkfbksebges bebewbrk wekbew wrbwhbksef 3bb</p>
+        <p>gbiubsbkfbksebges bebwarfaega wrfaw awrfwahbksef 3bb</p>
+        <p class="wrap">gbbsbkfbksebges bebewbrk awragagagabkafba afaff aw </p>
+    </div>
+    <p class="pos">
+        testing the position of the element.
+    </p>
+    <p class="transi">
+        Transition animation
+    </p>
+    <p class="key">
+        <b>
+            Animation with keyframes
+        </b>
+    </p>
+</body>
+</html>

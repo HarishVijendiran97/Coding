@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #743691;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #51166d;
+}
+#myForm {
+  text-align: center;
+}
+
+.form1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+input[type="password"] {
+  text-align: center;
+  width: 135px;
+  height: 16px;
+}
+#output {
+  text-align: justify;
+  text-align: center;
+}
+.member {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.imgPreNex{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    left: 42%;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#flip {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+#animContainer {
+  text-align: center;
+  margin-left: 41%;
+  margin-top: 20px;
+  width: 325px;
+  height: 50px;
+  background-color: #51166d;
+  position: relative;
+  border-radius: 25px;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background-color: #8c30b1;
+  position: absolute;
+  border: none;
+  border-radius: 25px;
+}
+
+#box:hover {
+  background-color: #f7f4f8;
+  box-shadow: 0px 0px 10px #b559da;
+}
+
+.subbtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #743691;
+  color: white;
+}
+.subbtn:hover {
+  background-color: #51166d;
+}

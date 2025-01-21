@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</Title></title>
+</head>
+<body>
+    <!--# main layout for the web page are header, main, footer must be inside the body of HTML, head and header are different tags, 
+    One HTML document must contain only one main-->
+    
+    <!--Section jumps here-->
+    <h1 id="s1">Practice</h1>
+    <!--div tag is used for grouping the elements to load faster and organise-->
+    <div>
+        <!--this is comment-->
+        <p><b>hi </b>Choose your area<br>
+            <em> of </em><br>
+            <strong> the</strong><br>
+            <i> interest</i><br>
+            <u> below</u>
+        </p>
+    </div>
+    <!--button tag-->
+    <button onclick="alert('You have clicked the button')">Click Me!</button>
+    <!--img as empty tag with name attribute alt and value attrib as width and height-->
+    <img src="Harish.jpg" onclick="alert('Dont touch face')" alt="Face of Harish" width="250" height="250"><br>
+    <!--link a tag-->
+    <a href="https:\\Google.com">Google</a>
+    <!--un ordered list-->
+    <ul>
+        <li>big</li>
+        <li>small</li>
+    </ul>
+    <!--ordered list-->
+    <ol>
+        <li>tall</li>
+        <li>short</li>
+    </ol>
+    <!--unordered list nested in ordered list-->
+    <ol>
+        <li>first</li>
+        <!--a tag nested in unoredered list-->
+        <ul>
+            <li>first A</li>
+            <!--a tag nested in unordered list which is nested in ordered list-->
+            <li><a href="https:\\Youtube.com">Youtube</a></li>
+        </ul>
+    </ol>
+    <!--Navigation tag-->
+    <nav>
+        <!--Navigate to loaction-->
+        <a href="index.html">Reload Page</a>
+        <!--takes you to the section in the same page(#) with the connected id-->
+        <a href="#s1">Scroll Up</a>
+    </nav>
+    <!--form to submit-->
+    <form>
+        <!--not connected label and input-->
+        <input type="checkbox">
+        <label>Art</label><br>
+        <!--connect input and label by id and for attrib which increases hit area-->
+        <input type="checkbox" id="c2">
+        <label for="c2">Sports</label><br>
+        <!--Data will be stored under name attrib-->
+        <input type="radio" id="c3" name="car">
+        <label for="c3">Tech</label><br>
+        <!--value can be default one using value-->
+        <input type="checkbox" id="c4" value="c0">
+        <label for="c4">Sports</label><br>
+        <!--label to select tag using id and for-->
+        <label for="dropdown">Drop-Down Menu:</label>
+        <!--drop down list select tag and where to store = name-->
+        <select name="Cars" id="dropdown">
+            <option value="car1">c1</option>
+            <option value="car2">c2</option>
+            <!--Selected attrib for default-->
+            <option value="car3" selected>c3</option>
+        </select>
+        <!--to submit the form-->
+        <input type="submit">
+    </form>
+    <!--video tag and source as empty tag-->
+    <video controls  width='250' height='250'>
+        <!--File location as src and type as file format-->
+        <source src="EtiiVid.mp4" type="video/mp4">
+        <!--text printed when the browser doesn't support the video-->
+        Video not supported
+    </video>
+    <!--everything same as video tag-->
+    <audio controls>
+        <source src="DARLING.mp3" type="audio/mpeg">
+        Auido not supported
+    </audio>
+    <!--Article tag which is semantic tag and give info about what they contain-->
+    <article>
+        <h2>article heading</h2>
+        <p>This is the article about..</p>
+    </article>
+    <!--section tag which break down the content into parts and also contains heading-->
+    <section>
+        <h3>section introduction</h3>
+        <p>This is the section, which is..</p>
+    </section>
+    <!--aside tag is used for related or secondary content-->
+    <aside>
+        <h4>Related topic of aside</h4>
+        <p>Did you know that..</p>
+    </aside>
+    <p>
+    <header>
+        Blog
+    </header>
+    <main>
+        <!--Combing of article, section and aside-->
+        <article>
+            combined article
+            <!--style attrib allows us to stylize our content also can use multiple properties-->
+            <section style="color: crimson; text-align: center; font-size: large; background-color: gray; border: 8px dotted maroon;">
+                Introduction section 1
+            </section>
+            <section>
+                Core content section 2
+            </section>
+        </article>
+        <!--Table tag-->
+        <table style="border: solid;">
+            <!--table row tag-->
+            <tr>
+                <!--Table header tag-->
+                <th>Heading Cell</th><th>Heading cell 2</th>
+                <!--Table data tag-->
+                <td style="border: dotted;">
+                    cell1
+                </td>
+                <td style="border:double;">
+                    cell2
+                </td>
+            </tr>
+            <tr>
+                <!--rowspan takes multiple row and merges-->
+                <td style="border: solid;" rowspan="5">cell4</td><td>cell5</td><td>cell6</td>
+            </tr>
+            <tr>
+                <!--column takes multiple column and merges-->
+                <td>cell1</td><td>cell2</td><td style="border: solid" colspan="5">cell3</td>
+            </tr>
+        </table>
+        <aside>
+            related aside
+        </aside>
+    </main>
+    <footer>
+        Blog 2024
+    </footer>
+    </p>
+    <!--in this button onclick image change to another from the source location-->
+    <img id="face" src="city.jpg" width="250" ><br>
+    <button onclick="document.getElementById('face').src='tree.jpg'">Tree</button>
+    <button onclick="document.getElementById('face').src='Harish.jpg'">Face</button>
+</body>
+</html>

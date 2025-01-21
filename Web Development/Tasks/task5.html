@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5</title>
+    <style>
+      /* .numb {
+        margin-bottom: 20px;
+      }
+      .numb h1 {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        color: #ffeedd;
+      } */
+      .numb h1:hover {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: white;
+      }
+      button:hover {
+        background-color: rgb(104, 250, 60);
+        color: white;
+        a {
+          color: black;
+        }
+      }
+      h1{
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 700;
+        text-align: center;
+        color: #e2ce17;
+        text-shadow: 2px 2px black;
+        margin: 20px;
+      }
+      h1:hover {
+        text-decoration: line-through;
+        cursor: pointer;
+        color: rgb(252, 51, 51);
+        transform: scale(150%);
+        transition: transform 0.2s ease-in;
+      }
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #fdf29e;
+        font-family: "Courier New", Courier, monospace;
+      }
+      body .container {
+        margin-bottom: 50px;
+        min-height: 50%;
+        max-height: 100%;
+        min-width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #a15fdf;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
+      .btn-task {
+        border-radius: 10px;
+        border-radius: 10px;
+        background-color: #feb236;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+      /* .outer-box{
+        position: relative;
+        height: 20px;
+        background-color: purple;
+        border: 2px solid black;
+        width: 150px;
+        margin-top: 20px;
+        border-radius: 20px;
+      }
+      .inner-box{
+        position: absolute;
+        height: 20px;
+        background-color: black;
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3
+        style="
+          font-weight: 700;
+          text-align: center;
+          color: #feb236;
+          text-shadow: 2px 2px black;
+        "
+      >
+        <b>Task 5</b>
+      </h3>
+      <div class="numb">
+        <h1 id="one" onclick="remove(event)">one</h1>
+        <h1 id="two" onclick="remove(event)">two</h1>
+        <h1 id="three" onclick="remove(event)">three</h1>
+        <h1 id="four" onclick="remove(event)">four</h1>
+        <h1 id="five" onclick="remove(event)">five</h1>
+        <h1 id="six" onclick="remove(event)">six</h1>
+        <h1 id="seven" onclick="remove(event)">seven</h1>
+        <h1 id="eight" onclick="remove(event)">eight</h1>
+      </div>
+      <button class="btn-task"><a href="..\JsGuess\index.html">Main Task</a></button>
+      <!-- <div class="outer-box">
+      <div class="inner-box">
+      </div>
+    </div> -->
+    </div>
+    <script>
+      function remove(event) {
+        // let numberone = document.getElementById('one');
+        // numberone.remove();
+        // console.log('one removed');
+        const numberRemove = event.target;
+
+        numberRemove.remove();
+
+        console.log(`${numberRemove.id} removed`);
+      }
+    </script>
+  </body>
+</html>

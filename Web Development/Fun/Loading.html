@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boooo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: rgb(200, 119, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(200, 119, 0, 1) 0%,
+          rgba(0, 200, 111, 1) 100%
+        );
+        backdrop-filter: brightness(10%);
+        background-repeat: no-repeat;
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-size: 128px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: 900;
+        color: #fff;
+        font-style: italic;
+        text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
+          -2px 2px 0px black;
+      }
+      .outer-box {
+        position: relative;
+        height: 50px;
+        background-color: purple;
+        border: 2px solid black;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+      .inner-box {
+        position: absolute;
+        height: 46px;
+        background-color: rgb(199, 21, 146);
+        border: none;
+        border-radius: 20px;
+        width: 0px;
+        transition: 2s ease-out;
+      }
+      .container {
+        text-align: center;
+      }
+      button {
+        display: flex;
+        font-size: 64px;
+        border-radius: 40px;
+        padding: 15px 30px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        outline: none;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: 900;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
+          -2px 2px 0px black;
+      }
+
+      button:hover {
+        background-color: rebeccapurple;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 100px;
+        position: absolute;
+        top: 50px;
+        text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
+          -2px 2px 0px black;
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background: rgb(200, 119, 0);
+          background: linear-gradient(
+            180deg,
+            rgba(200, 119, 0, 1) 0%,
+            rgba(0, 200, 111, 1) 100%
+          );
+          backdrop-filter: brightness(10%);
+        }
+        h2 {
+          color: #fff;
+          font-size: 64px;
+          position: absolute;
+          margin-bottom: 20px;
+          top: 20px;
+          text-shadow: 2px 2px 0px black, -2px -2px 0px black,
+            2px -2px 0px black, -2px 2px 0px black;
+        }
+        button {
+          display: flex;
+          font-size: 32px;
+          border-radius: 40px;
+          padding: 15px 30px;
+          background-color: blueviolet;
+          border: 2px solid black;
+          outline: none;
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          font-weight: 900;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-top: 50px;
+          color: #fff;
+          text-shadow: 2px 2px 0px black, -2px -2px 0px black,
+            2px -2px 0px black, -2px 2px 0px black;
+        }
+        .outer-box {
+          position: relative;
+          height: 40px;
+          background-color: purple;
+          border: 2px solid black;
+          width: 320px;
+          margin: 0 auto;
+          border-radius: 20px;
+        }
+        .inner-box {
+          position: absolute;
+          height: 36px;
+          background-color: rgb(199, 21, 146);
+          border: none;
+          border-radius: 20px;
+          width: 0px;
+          transition: 2s ease-out;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="audio" src="whyGay.mp3" preload="auto"></audio>
+    <h2 id="welcome">Welcome</h2>
+    <div class="container">
+      <h1 id="result"></h1>
+      <div class="outer-box" id="loader">
+        <div class="inner-box" id="loading"></div>
+      </div>
+    </div>
+    <button class="touch-btn" id="btn" onclick="lol()">Touch Me</button>
+    <script>
+      var x = document.getElementById("result");
+
+      var y = document.getElementById("loading");
+      var z = document.getElementById("btn");
+      var p = document.getElementById("loader");
+      var o = document.getElementById("welcome");
+      var audio = document.getElementById("audio");
+
+      function lol() {
+        y.style.width = "496px";
+        y.addEventListener("transitionend", function () {
+          o.remove();
+          if (y.style.width === "496px") {
+            x.style.width = "420px";
+            x.textContent = "You are Gay";
+            y.remove();
+            z.remove();
+            p.remove();
+            audio.play();
+            document.body.style.background = "rgb(255, 0, 0)";
+            document.body.style.background =
+              "linear-gradient(180deg, rgba(255, 0, 0, 1) 0%, rgba(255, 165, 0, 1) 16.6%, rgba(255, 255, 0, 1) 33.2%, rgba(0, 255, 0, 1) 49.8%, rgba(0, 0, 255, 1) 66.4%, rgba(75, 0, 130, 1) 83%, rgba(127, 0, 255, 1) 100%)";
+            document.body.style.backdropFilter = "brightness(100%)";
+            document.body.style.backgroundRepeat = "no-repeat";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
